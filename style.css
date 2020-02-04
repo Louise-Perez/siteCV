@@ -1,0 +1,445 @@
+/* Color 
+#F9F6F7 : clair;
+#90C1C9 : Bleu glace;
+#407088 : Bleu clair;
+#D3D3D3 : Gris clair;
+#353232 : Gris foncé;
+*/
+
+/* GENERAL */ 
+
+@font-face {
+	font-family: BebasNeue;
+	src : url('typo/BebasNeue-Regular.ttf');
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+		background: url(image/bg.png) no-repeat;
+	background-size: cover;	
+	background-attachment: fixed;
+}
+
+.container{
+	color: #F9F6F7;
+	color: #407088;
+	width: 100%;
+	font-size: 20px;
+}
+
+h1{
+	color: #132743;
+	font-size: 50px;
+}
+
+h2{
+	font-size: 40px;
+	font-family: BebasNeue;
+}
+
+/* MAIN */ 
+.main{
+	padding-top: 15px;
+
+	height: 650px;
+	width: 100%;
+	position: relative;
+
+}
+.title{
+	position: absolute;
+	top: 150px;
+}
+
+.name{
+	width:500px;
+	padding-top: 60px;
+	padding-left: 100px;
+}
+
+.name h2{
+	padding-left: 20px;
+}
+
+.wave{
+	padding-left: 80px;
+	padding-top: 20px;
+}
+
+.link{
+	position: absolute;
+	bottom: 240px;
+	left: 170px;
+}
+.linksocial{
+	display: flex;
+	justify-content: space-between;
+
+}
+.linksocial img{
+	width:25px;
+	height:25px;
+}
+
+.itemslink{
+	margin-right: 20px;
+}
+
+.image2 img{
+	width: 94px;
+	height: 35px;
+}
+.GV{
+	width:25px;
+	height:25px;
+	background-color: white;
+	border-radius: 25px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+}
+.GV a{
+	text-decoration: none;
+	color: #407088;
+}
+.GV:hover{
+	box-shadow:  2px 2px  10px black;
+/*	transform: translateY(-5px);*/
+}
+
+/* ABOUT */ 
+
+.about{
+	padding-top: 30px;
+	background-color: #407088 ;
+	color: white;
+	height: 300px;
+	text-align: center;
+}
+
+.about p{
+		width: 1000px;
+		padding-top: 30px;
+		text-align: left;
+
+}
+
+/* COMPETENCES */ 
+
+.competences{
+	background: white;
+	opacity: 0.8;
+	display:flex;
+	justify-content: center;
+	height: 300px;
+	padding-top: 20px;
+	align-items: center;
+	width: 100%;
+}
+
+.langage h2{
+	padding-bottom: 20px;
+}
+
+
+.langage ul li{
+	list-style-type: none;
+	margin-top: 10px;
+}
+.langage ul li ul li{
+ list-style-type: none;
+ display: inline-flex;
+
+
+}
+.langage ul li ul li img{
+	width: 40px;
+	height: 40px;
+}
+
+
+.atouts h2{
+		padding-bottom: 20px;
+		margin-top: -90px;
+}
+.atouts ul li{
+	list-style-type: none;
+}
+
+
+/* EXPERIENCE */ 
+
+.experiences{
+	background-color: #407088;
+	height: 100%;
+	text-align: left;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #F9F6F7;
+}	
+.experiences h2 {
+	text-align: center;
+}
+.ligne{
+		display: flex;
+}
+
+.experiences a{
+color:#F9F6F7;
+}
+.iconexp{
+	width: 60px;
+	height: 60px; 
+	margin-right: 25px;
+	background-color: white;
+	border-radius: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	top: 30%;
+}
+.iconexp img{
+	width: 40px;
+	height: 40px;
+	padding-top: 10px;
+}
+
+.dateexp{
+	color:#CFB997 ;
+	font-weight: bold;
+	font-size: 22px;
+}
+.exptitle{		
+	font-weight: bold;
+}
+
+.textexp{
+	width:80%;
+}
+
+.textexp img{
+	width:40px;
+	height: 40px;
+	padding-top: 5px;
+}
+
+strong  {
+		font-weight: normal;
+		color: #90C1C9;
+}
+
+
+.droite{
+	width: 45%;
+	display:flex;
+	flex-direction: column;
+}
+
+.gauche{
+	border-right: 2px solid #132743;
+	width: 45%;
+	display:flex;
+	flex-direction: column;
+
+}
+
+/* HOBBIES */ 
+
+
+.hobbies{
+	padding-top: 30px;
+	background: white;
+	opacity: 0.8;
+	height: 420px;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.hobbies img{					/* Pictos intérêts */
+	width: 50px;
+	height: 50px;
+}
+
+
+.interet{
+	display: inline-flex;
+	justify-content: space-around;
+	flex-direction: row;
+	width: 60px;
+	margin-left: 20px; 
+	margin-right: 20px;
+	margin-top: 20px;
+	padding-top: 20px;
+	position: relative;
+}
+
+.interet p{					/* Description masquée */
+	opacity: 0;
+}
+.interet:hover p{			/* Apparition de la description */
+	opacity: 1;
+	transition: 0.8s;
+}
+
+.description{
+	position: absolute;
+	bottom: -30px;
+	left: 5px;
+}
+
+.benevolat{
+	padding-top: 60px;
+}
+
+.help{						/* Partie PCS1 */
+	margin-top: 25px;
+}
+.help p{
+	opacity: 0;
+}
+.help:hover p{				/* hover PSC1 */
+	opacity: 1;
+	transition: 0.8s;
+}
+/* CONTACT */ 
+
+.contact{
+	padding-top: 30px;
+	background-color: #353232;
+	height: 80px;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+.contact img{
+	width:35px;
+	height:35px;
+	background-color: white;
+	border-radius: 25px;
+}
+
+.linkedin{							/* Icone linkedin */
+	width: 15%;
+	height: 50%;
+	margin-top: 10px;
+}
+
+.git{								/* Icone git */
+	width: 15%;
+	height: 50%;
+	margin-top: 10px;
+
+}
+
+.centre h2{							/* contact */
+	margin :0px;
+
+	color: white;
+	padding: 5%;
+}
+
+.down{
+	width: 15%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.download{							/* Icone CV */
+	width:35px;
+	height:35px;
+	background-color: white;
+	border-radius: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.download a{
+	text-decoration: none;
+	color: #353232;
+}
+.mail{								/* Icone mail */ 
+	width: 15%;
+	height: 50%;
+	margin-top: 10px;
+}
+
+
+
+ /* Pour les tablettes / smartphone */ 
+
+@media screen and (max-width: 780px) 
+{
+	body 
+	{
+		width:100%;
+	} 
+	.about  {
+					height: 420px;
+	}
+	.about p{
+			width: 100%;
+
+			padding-left: 10px;
+	}
+	.competences{
+		width: 100%;
+		height: 100%;
+		padding-bottom: 40px;
+	}
+
+	.atouts{
+
+	}
+	.experiences{
+		width: 100%;
+		height: 100%;
+		padding-bottom: 40px;
+	}
+	.droite{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.iconexp{
+		display: none;
+	}
+	.textexp{
+		margin-top: 25px;
+	}
+	.hobbies{
+			width: 100%;
+			height: 530px;
+	}
+	.hobbies li{
+	list-style-type: none;
+	padding-top: 20px;
+	display: inline-flex;
+	}
+
+
+}
+
+/*@media all and (min-width: 780px) and (max-width: 1280px) {
+
+	.iconexp{
+		display: none;
+	}
+	.textexp{
+		margin-top: 25px;
+	}
+}
+*/
