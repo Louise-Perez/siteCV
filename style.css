@@ -21,10 +21,11 @@
 body{
 	background: url(image/bg.png) no-repeat;
 	background-size: cover;	
+	background-position: 25% 75%;
 	background-attachment: fixed;
 	height: 100%;
 	width: 100%;
-font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto Slab', serif;
 }
 
 .container{
