@@ -444,9 +444,9 @@ strong  {
 @media screen and (max-width: 780px) 
 {
 	body {
-		background: url(image/bg.png);
-		background-size: 100% 100%;
-		background-repeat: repeat-x;
+		background: url(image/bg.png) no-repeat;
+		background-size: cover;	
+		background-position: 25% 75%;
 		background-attachment: fixed;
 		width:100%;
 	} 
@@ -516,9 +516,9 @@ strong  {
 
 @media all and (min-width: 780px) and (max-width: 1280px) {
 	body {
-		background: url(image/bg.png);
-		background-size: 100% 100%;
-		background-repeat: repeat-x;
+		background: url(image/bg.png) no-repeat;
+		background-size: cover;	
+		background-position: 25% 75%;
 		background-attachment: fixed;
 		width:100%;
 	} 
