@@ -153,6 +153,7 @@ strong  {
 	opacity: 0.8;
 	padding-top: 20px;
 	width: 100%;
+	align-items: flex-start;
 }
 
 .competences ul li{
@@ -161,6 +162,7 @@ strong  {
 
 .langage h2{
 	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 .langage ul li{
@@ -178,11 +180,12 @@ strong  {
 }
 
 .technique h2{
-	margin-top: -20px;
 	padding-bottom: 20px;
+	padding-top: 20px;
 }
 .atouts h2{
 	padding-bottom: 20px;
+	padding-top: 20px;
 }
 /* PORTFOLIO */ 
 
