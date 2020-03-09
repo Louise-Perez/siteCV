@@ -1,0 +1,537 @@
+/* Color 
+#F9F6F7 : clair;
+#90C1C9 : Bleu glace;
+#407088 : Bleu clair;
+#D3D3D3 : Gris clair;
+#353232 : Gris foncé;
+*/
+
+/* GENERAL */ 
+
+@font-face {
+	font-family: BebasNeue;
+	src : url('typo/BebasNeue-Regular.ttf');
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+body{
+	background: url(image/bg.png) no-repeat;
+	background-size: cover;	
+	background-position: 25% 75%;
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+	font-family: 'Roboto Slab', serif;
+}
+
+.container{
+	color: #F9F6F7;
+	color: #407088;
+	font-size: 20px;
+	width: 100%;
+}
+
+h1{
+	color: #132743;
+	font-size: 50px;
+}
+
+h2{
+	font-family: BebasNeue;
+	font-size: 40px;
+
+}
+
+strong  {
+	color: #132743;
+	font-weight: normal;
+}
+
+
+/* MAIN */ 
+.main{
+	background: url(image/bg.png) no-repeat;
+	background-size: cover;	
+	height: 650px;
+	padding-top: 15px;
+	position: relative;
+	width: 100%;
+
+}
+.title{
+	position: absolute;
+	top: 150px;
+}
+
+.name{
+	padding-top: 60px;
+	padding-left: 100px;
+	width:500px;
+}
+
+.name h2{
+	padding-left: 20px;
+}
+
+.wave{
+	padding-left: 80px;
+	padding-top: 20px;
+}
+
+.link{
+	bottom: 240px;
+	left: 170px;
+	position: absolute;
+}
+.linksocial{
+	display: flex;
+	justify-content: space-between;
+
+}
+.linksocial img{
+	height:25px;
+	width:25px;
+	border-radius: 100%;
+}
+.itemslink{
+	margin-right: 20px;
+}
+.linksocial img:hover{
+	box-shadow:  2px 2px  10px black;
+}
+.image2 img{
+	height: 35px;
+	width: 94px;
+}
+.GV{
+	align-items: center;
+	background-color: black;
+	border-radius: 25px;
+	display:flex;
+	font-size: 12px;
+	height:25px;
+	justify-content: center;
+	width:25px;
+}
+.GV a{
+	color: white;
+	text-decoration: none;
+}
+.GV:hover{
+	box-shadow:  2px 2px  10px black;
+}
+
+/* ABOUT */ 
+
+.about{
+	background-color: #407088 ;
+	color: white;
+	height: 300px;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.about p{
+	padding-top: 30px;
+	text-align: left;
+	width: 1000px;
+
+}
+
+/* COMPETENCES */ 
+
+.competences{
+	align-items: center;
+	background: white;
+	display:flex;
+	height: 300px;
+	justify-content: center;
+	opacity: 0.8;
+	padding-top: 20px;
+	width: 100%;
+	align-items: flex-start;
+}
+
+.competences ul li{
+	list-style-type: none;
+}
+
+.langage h2{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.langage ul li{
+	list-style-type: none;
+	margin-top: 10px;
+}
+.langage ul li ul li{
+	display: inline-flex;
+	list-style-type: none;
+}
+
+.langage ul li ul li img{
+	height: 40px;
+	width: 40px;
+}
+
+.technique h2{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.atouts h2{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+
+/* EXPERIENCE */ 
+
+.experiences{
+	background-color: #407088;
+	color: #F9F6F7;
+	height: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: left;
+}	
+
+.experiences h2 {
+	text-align: center;
+}
+
+.ligne{
+	display: flex;
+}
+
+.experiences a{
+	color:#F9F6F7;
+}
+
+.iconexp{ 
+	background-color: white;
+	border-radius: 100%;
+	display: flex;
+	height: 60px;
+	justify-content: flex-end;
+	margin-right: 25px;
+	position: relative;
+	text-align: center;
+	top: 50%;
+	width: 60px;
+}
+.iconexp img{
+	height: 40px;
+	padding-top: 10px;
+	width: 40px;
+}
+
+.dateexp{
+	color:#CFB997 ;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.exptitle{		
+	font-weight: bold;
+}
+
+.textexp{
+	width:70%;
+}
+
+.textexp img{
+	height: 40px;
+	padding-top: 5px;
+	width:40px;
+}
+
+.droite{
+	display:flex;
+	flex-direction: column;
+	width: 45%;
+}
+
+.gauche{
+	border-right: 2px solid #132743;
+	display:flex;
+	flex-direction: column;
+	padding-right: 50px;
+	width: 45%;
+}
+
+/* HOBBIES */ 
+
+.hobbies{
+	background: white;
+	display: flex;
+	flex-direction: column;
+	height: 420px;
+	opacity: 0.8;
+	padding-top: 30px;
+	text-align: center;
+	width: 100%;
+}
+
+.hobbies img{					/* Pictos intérêts */
+	height: 50px;
+	width: 50px;
+}
+
+.interet{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-left: 20px; 
+	margin-right: 20px;
+	margin-top: 20px;
+	padding-top: 20px;
+	position: relative;
+	width: 60px;
+}
+
+.interet p{					/* Description masquée */
+	opacity: 0;
+}
+
+.interet:hover p{			/* Apparition de la description */
+	opacity: 1;
+	transition: 0.8s;
+}
+
+.description{
+	bottom: -30px;
+	left: 5px;
+	position: absolute;
+}
+
+.benevolat{
+	padding-top: 60px;
+}
+
+.help{						/* Partie PCS1 */
+	margin-top: 25px;
+}
+
+.help p{
+	opacity: 0;
+}
+
+.help:hover p{				/* hover PSC1 */
+	opacity: 1;
+	transition: 0.8s;
+}
+
+/* CONTACT */ 
+
+.contact{
+	background-color: #353232;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	padding-top: 30px;
+	text-align: center;
+	width: 100%;
+}
+.contact img{
+
+	border-radius: 25px;
+	height:35px;
+	width:35px;
+}
+
+.linkedin{							/* Icone linkedin */
+	height: 50%;
+	margin-top: 10px;
+	width: 15%;
+}
+
+.git{								/* Icone git */
+	height: 50%;
+	margin-top: 10px;
+	width: 15%;
+}
+.git img {
+	height: 40px;
+	width: 40px;
+}
+
+.centre h2{							/* contact */
+	color: white;
+	margin :0px;
+	padding: 5%;
+}
+
+.down{
+	display: flex;
+	justify-content: center;
+	height: 50%;
+	margin-top: 10px;
+	width: 15%;
+}
+
+.download{							/* Icone CV */
+	align-items: center;
+	background-color: white;
+	border-radius: 25px;
+	display: flex;
+	height:35px;
+	justify-content: center;
+	width:35px;
+}
+
+.download a{
+	color: #353232;
+	text-decoration: none;
+}
+
+.mail{								/* Icone mail */ 
+	align-items: center;
+	background-color: white;
+	border-radius: 25px;
+	display: flex;
+	height: 35px;
+	margin-top: 10px;
+	width: 35px;
+}
+.mail img{
+	height: 25px;
+	width: 25px;
+}
+
+ /* Pour les tablettes / smartphone */ 
+
+@media screen and (max-width: 780px) 
+{
+	body {
+		background: url(image/bg.png) no-repeat;
+		background-size: cover;	
+		background-position: 25% 75%;
+		background-attachment: fixed;
+		width:100%;
+	} 
+	.about  {
+		height: 450px;
+	}
+	.about p{
+		padding-left: 10px;
+		width: 100%;
+	}
+	.competences{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: 800px;
+		padding-top: 20px;
+		padding-bottom: 40px;
+		width: 100%;
+	}
+
+	.competences h2{
+		margin-top: 30px;
+	}
+	.portfolio{
+		height: 500px;
+	}
+	.lesprojets{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: 400px;
+	}
+	.projet{
+		margin-top: 10px;
+	}
+
+	.experiences{
+		height: 100%;
+		padding-bottom: 40px;
+		width: 100%;
+	}
+
+	.droite{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.iconexp{
+		display: none;
+	}
+
+	.textexp{
+		margin-top: 25px;
+	}
+
+	.hobbies{
+		height: 500px;
+		width: 100%;
+	}
+
+	.hobbies li{
+		display: inline-flex;
+		list-style-type: none;
+		padding-top: 20px;
+	}
+}
+
+@media all and (min-width: 780px) and (max-width: 1280px) {
+	body {
+		background: url(image/bg.png) no-repeat;
+		background-size: cover;	
+		background-position: 25% 75%;
+		background-attachment: fixed;
+		width:100%;
+	} 
+
+	.about  {
+		height: 420px;
+	}
+
+	.about p{
+		width: 80%;
+	}
+
+	.competences{
+		display: flex;
+		height: 400px;
+		padding-bottom: 40px;
+		padding-top: 20px;
+		width: 100%;
+	}
+
+	.competences h2{
+		margin-top: 30px;
+	}
+
+	.experiences{
+		height: 100%;
+		padding-bottom: 40px;
+		width: 100%;
+	}
+
+	.droite{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.textexp{
+		margin-top: 25px;
+		width:50%;
+	}
+
+	.hobbies{
+		height: 450px;
+		width: 100%;
+	}
+
+	.hobbies li{
+		display: inline-flex;
+		list-style-type: none;
+		padding-top: 20px;
+	}
+}
